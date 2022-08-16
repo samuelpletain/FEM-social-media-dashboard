@@ -12,12 +12,14 @@ export default defineNuxtConfig({
     css: {
         preprocessorOptions: {
             scss: {
-                additionalData: '@import "@/assets/scss/styles.scss";',
+              additionalData: '@import "@/assets/scss/styles.scss";',
             },
         },
     },
-},
+  },
   content: {
     // https://content.nuxtjs.org/api/configuration
-  }
+  },
+  ssr: false,
+  target: 'static',
 })

@@ -71,6 +71,7 @@
     font-weight: $font-weight-bold;
     font-size: 3.5rem;
     margin-bottom: 2rem;
+    color: var(--text-neutral-400);
     &__type {
       margin-top: .5rem;
       text-transform: uppercase;

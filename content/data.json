@@ -1,34 +1,94 @@
-[
-  {
-    "social": "facebook",
-    "handle": "@nathanf",
-    "type": "followers",
-    "count": "1987",
-    "dailyCount": 12,
-    "trend": "up"
-  },
-  {
-    "social": "twitter",
-    "handle": "@nathanf",
-    "type": "followers",
-    "count": "1044",
-    "dailyCount": 99,
-    "trend": "up"
-  }, 
-  {
-    "social": "instagram",
-    "handle": "@realnathanf",
-    "type": "followers",
-    "count": "11k",
-    "dailyCount": 1099,
-    "trend": "up"
-  },
-  {
-    "social": "youtube",
-    "handle": "Nathan F.",
-    "type": "followers",
-    "count": "8239",
-    "dailyCount": 144,
-    "trend": "down"
-  }
-]
+{
+  "largeCards": [
+    {
+      "social": "facebook",
+      "handle": "@nathanf",
+      "type": "followers",
+      "count": "1987",
+      "dailyCount": 12,
+      "trend": "up"
+    },
+    {
+      "social": "twitter",
+      "handle": "@nathanf",
+      "type": "followers",
+      "count": "1044",
+      "dailyCount": 99,
+      "trend": "up"
+    }, 
+    {
+      "social": "instagram",
+      "handle": "@realnathanf",
+      "type": "followers",
+      "count": "11k",
+      "dailyCount": 1099,
+      "trend": "up"
+    },
+    {
+      "social": "youtube",
+      "handle": "Nathan F.",
+      "type": "followers",
+      "count": "8239",
+      "dailyCount": 144,
+      "trend": "down"
+    }
+  ],
+  "smallCards": [
+    {
+      "title": "Page Views",
+      "social": "facebook",
+      "count": "87",
+      "percentage": 3,
+      "trend": "up"
+    },
+    {
+      "title": "Likes",
+      "social": "facebook",
+      "count": "52",
+      "percentage": 2,
+      "trend": "down"
+    },
+    {
+      "title": "Likes",
+      "social": "instagram",
+      "count": "5462",
+      "percentage": 2257,
+      "trend": "up"
+    },
+    {
+      "title": "Profile Views",
+      "social": "instagram",
+      "count": "52k",
+      "percentage": 1375,
+      "trend": "down"
+    },
+    {
+      "title": "Retweets",
+      "social": "twitter",
+      "count": "117",
+      "percentage": 303,
+      "trend": "up"
+    },
+    {
+      "title": "Likes",
+      "social": "twitter",
+      "count": "507",
+      "percentage": 553,
+      "trend": "up"
+    },
+    {
+      "title": "Likes",
+      "social": "youtube",
+      "count": "107",
+      "percentage": 19,
+      "trend": "down"
+    },
+    {
+      "title": "Total Views",
+      "social": "youtube",
+      "count": "1407",
+      "percentage": 12,
+      "trend": "down"
+    }
+  ]
+}

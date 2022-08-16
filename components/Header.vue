@@ -1,10 +1,14 @@
+<script setup lang="ts">
+  const theme = useTheme()
+</script>
+
 <template>
   <header class="header">
     <h1 class="header__title">Social Media Dashboard</h1>
     <p class="header__follower_count">Total followers: 23,004</p>
     <div class="header__theme_switcher theme_switcher">
       <p class="theme_switcher__title">Dark Mode</p>
-      <button class="theme_switcher__toggle"></button>
+      <button class="theme_switcher__toggle" :class="theme ? 'toggle--on' : ''" @click="theme = !theme"></button>
     </div>
   </header>
 </template>
@@ -42,6 +46,9 @@
       border-radius: 1.5rem;
       position: relative;
       padding: 0;
+      &:hover {
+        cursor: pointer;
+      }
       &:focus {
         outline: none;
       }
@@ -55,9 +62,15 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        right: .2rem;
-        margin: auto 0;
+        left: calc(3rem - 1.2rem - .2rem); 
+        margin: auto 0;        
+        transition: all .2s ease;
       }
     }
   }
+  
+  .toggle--on::after {
+    left: .2rem;
+    transition: all .2s ease;
+  } 
 </style>
