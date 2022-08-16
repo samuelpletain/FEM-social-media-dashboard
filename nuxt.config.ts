@@ -22,4 +22,7 @@ export default defineNuxtConfig({
   },
   ssr: false,
   target: 'static',
+  router: {
+    base: '/FEM-social-media-dashboard/'
+  }
 })
