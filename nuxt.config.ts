@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   content: {
     // https://content.nuxtjs.org/api/configuration
   },
-  ssr: false,
+  ssr: true,
   target: 'static',
   router: {
     base: '/FEM-social-media-dashboard/'
