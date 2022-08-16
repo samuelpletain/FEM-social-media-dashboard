@@ -1,0 +1,63 @@
+<template>
+  <header class="header">
+    <h1 class="header__title">Social Media Dashboard</h1>
+    <p class="header__follower_count">Total followers: 23,004</p>
+    <div class="header__theme_switcher theme_switcher">
+      <p class="theme_switcher__title">Dark Mode</p>
+      <button class="theme_switcher__toggle"></button>
+    </div>
+  </header>
+</template>
+
+<style lang="scss">
+  .header {
+    background-color: var(--background);
+    font-weight: $font-weight-bold;
+    background: var(--background-top);
+    color: var(--text-neutral-100);
+    padding: 2rem 1.5rem 5rem;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: .5rem;
+      color: var(--text-neutral-400);
+    }
+    &__follower_count {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px var(--text-neutral-100) solid;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .theme_switcher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__toggle {
+      width: 3rem;
+      background: var(--toggle);
+      border: none;
+      height: 1.6rem;
+      border-radius: 1.5rem;
+      position: relative;
+      padding: 0;
+      &:focus {
+        outline: none;
+      }
+      &::after {
+        content: '';
+        width: 1.2rem;
+        height: 1.2rem;
+        background-color: hsl(0, 0%, 100%);
+        display: block;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: .2rem;
+        margin: auto 0;
+      }
+    }
+  }
+</style>
