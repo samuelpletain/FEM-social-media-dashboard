@@ -12,12 +12,12 @@
 <template>
   <div class="large_card" :class="'large_card--' + props.social">
     <div class="large_card__social social">
-      <img :src="'~/assets/img/icon-' + props.social + '.svg'" alt="" class="social__img">
+      <img :src="'/img/icon-' + props.social + '.svg'" alt="" class="social__img">
       <p class="social__handle">{{ props.handle }}</p>
     </div>
     <p class="large_card__stats stats">{{ props.count }} <span class="stats__type">{{ props.type }}</span></p>
     <div class="large_card__daily_stats daily_stats">
-      <img :src="'~/assets/img/icon-' + props.trend + '.svg'" alt="" class="daily_stats__arrow">
+      <img :src="'/img/icon-' + props.trend + '.svg'" alt="" class="daily_stats__arrow">
       <p class="daily_stats__count count" :class="'count--' + props.trend">{{ props.dailyCount }} Today</p>
     </div>
   </div>

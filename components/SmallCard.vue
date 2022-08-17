@@ -11,10 +11,10 @@
 <template>
   <div class="small_card">
     <p class="small_card__title">{{ props.title }}</p>
-    <img :src="'~/assets/img/icon-' + props.social + '.svg'" alt="" class="small_card__logo">
+    <img :src="'/img/icon-' + props.social + '.svg'" alt="" class="small_card__logo">
     <p class="small_card__count">{{ props.count }}</p>
     <div class="small_card__percentage_trend percentage_trend">
-      <img :src="'~/assets/img/icon-'+ props.trend + '.svg'" alt="" class="percentage_trend__arrow">
+      <img :src="'/img/icon-'+ props.trend + '.svg'" alt="" class="percentage_trend__arrow">
       <p class="percentage_trend__percentage percentage" :class="'percentage--' + props.trend">{{ props.percentage}}%</p>
     </div>
   </div>
