@@ -9,7 +9,7 @@
       <p class="header__follower_count">Total followers: 23,004</p>
       <div class="header__theme_switcher theme_switcher">
         <p class="theme_switcher__title">Dark Mode</p>
-        <button class="theme_switcher__toggle" :class="theme ? 'toggle--on' : ''" @click="theme = !theme"></button>
+        <div class="theme_switcher__toggle" :class="theme ? 'toggle--on' : ''" @click="theme = !theme"></div>
       </div>
     </div>
   </header>
