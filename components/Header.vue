@@ -4,18 +4,19 @@
 
 <template>
   <header class="header">
-    <h1 class="header__title">Social Media Dashboard</h1>
-    <p class="header__follower_count">Total followers: 23,004</p>
-    <div class="header__theme_switcher theme_switcher">
-      <p class="theme_switcher__title">Dark Mode</p>
-      <button class="theme_switcher__toggle" :class="theme ? 'toggle--on' : ''" @click="theme = !theme"></button>
+    <div class="wrapper">
+      <h1 class="header__title">Social Media Dashboard</h1>
+      <p class="header__follower_count">Total followers: 23,004</p>
+      <div class="header__theme_switcher theme_switcher">
+        <p class="theme_switcher__title">Dark Mode</p>
+        <button class="theme_switcher__toggle" :class="theme ? 'toggle--on' : ''" @click="theme = !theme"></button>
+      </div>
     </div>
   </header>
 </template>
 
 <style lang="scss">
   .header {
-    background-color: var(--background);
     font-weight: $font-weight-bold;
     background: var(--background-top);
     color: var(--text-neutral-100);
@@ -56,7 +57,7 @@
         content: '';
         width: 1.2rem;
         height: 1.2rem;
-        background-color: hsl(0, 0%, 100%);
+        background-color: var(--background);
         display: block;
         border-radius: 100%;
         position: absolute;
@@ -73,4 +74,30 @@
     left: .2rem;
     transition: all .2s ease;
   } 
+
+  @include breakpoint() {
+    .header {
+      position: relative;
+      padding-bottom: 7rem;
+      &__title {
+        font-size: 1.7rem;
+      }
+      &__follower_count {
+        border-bottom: none;
+      }
+    }
+
+    .theme_switcher {
+      position: absolute;
+      right: 0;
+      gap: .5rem;
+      top: 1rem;
+    }
+
+    .wrapper {
+      max-width: 1100px;
+      margin: auto;
+      position: relative;
+    }
+  }
 </style>
