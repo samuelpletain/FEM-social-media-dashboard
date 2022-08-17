@@ -84,6 +84,8 @@
       }
       &__follower_count {
         border-bottom: none;
+        margin-bottom: 2.5rem;
+        padding-bottom: 0;
       }
     }
 
@@ -91,7 +93,8 @@
       position: absolute;
       right: 0;
       gap: .5rem;
-      top: 1rem;
+      top: 0;
+      bottom: 0;
     }
 
     .wrapper {
